@@ -44,9 +44,31 @@
     window.$docsify = {
       name: 'Wild Work EN',
       repo: '',
-      loadSidebar: true,
       subMaxLevel: 3,
-      auto2top: true
+      auto2top: true,
+      sidebar: [
+        { title: '🏠 Home', link: '/en/' },
+        { title: '🔒 Personal Account Security', link: '/en/wildworktech' },
+        { title: '▶️ Starting a Work Shift', link: '/en/shift-start' },
+        { title: '📊 Conversion and Turnover', link: '/en/conversion' },
+        { title: '💳 Payment Infrastructure', link: '/en/requisites' },
+        { title: '💵 Requisites', link: '/en/requisites-info' },
+        { title: '➕ Add Requisite', link: '/en/add-requisite' },
+        { title: '▶️ How to Activate a Requisite', link: '/en/activate-requisite' },
+        { title: '⭕️ Important Rules and Notes', link: '/en/rules-notes' },
+        { title: '💸 Accounts', link: '/en/accounts' },
+        { title: '⚙️ Automation Setup', link: '/en/automation' },
+        { title: '⭕️ Important Rules for Automation', link: '/en/automation-rules' },
+        { title: '👥 Participants', link: '/en/participants' },
+        { title: '📦 Orders', link: '/en/orders' },
+        { title: '🔍 Filters', link: '/en/filters' },
+        { title: '💳 ECOM', link: '/en/ecom' },
+        { title: '🔄 P2P', link: '/en/p2p' },
+        { title: '💰 Payouts', link: '/en/payouts' },
+        { title: '📩 Appeals', link: '/en/appeals' },
+        { title: '📊 Reports', link: '/en/reports' },
+        { title: '💬 Chats', link: '/en/chats' }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -54,9 +76,4 @@
     document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('sidebar-toggle-btn');
       if (btn) {
-        btn.addEventListener('click', function() { document.body.classList.toggle('close'); });
-      }
-    });
-  </script>
-</body>
-</html>
+        btn.addEventListener('click', function() { document.body.classList.
