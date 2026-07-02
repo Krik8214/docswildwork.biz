@@ -46,9 +46,9 @@
 <body>
   <button id="sidebar-toggle-btn" title="Свернуть/развернуть меню">☰</button>
   <div style="position: fixed; top: 15px; right: 15px; z-index: 1000; font-size: 1em;">
-    <a href="/" style="text-decoration: none; padding: 6px 10px; background-color: #d1ecf1; border-radius: 6px; color: black; font-weight: bold;">RU</a>
+    <a href="https://docswildwork.biz" style="text-decoration: none; padding: 6px 10px; background-color: #d1ecf1; border-radius: 6px; color: black; font-weight: bold;">RU</a>
     <span style="margin: 0 3px; color: #999;">|</span>
-    <a href="/en/" style="text-decoration: none; padding: 6px 10px; background-color: #e9ecef; border-radius: 6px; color: black; font-weight: bold;">EN</a>
+    <a href="https://docswildwork.biz/en/" style="text-decoration: none; padding: 6px 10px; background-color: #e9ecef; border-radius: 6px; color: black; font-weight: bold;">EN</a>
   </div>
   <div id="app"></div>
   <script>
@@ -89,7 +89,8 @@
               });
             }
           });
-          var currentPath = vm.route.path;var currentIndex = -1;
+          var currentPath = vm.route.path;
+          var currentIndex = -1;
           for (var i = 0; i < links.length; i++) {
             var linkPath = links[i].link.replace(/^\//, '');
             var curPathClean = currentPath.replace(/^\//, '');
